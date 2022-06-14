@@ -1,0 +1,29 @@
+/** BG COLOR **/
+/** END BG COLOR **/
+/** COLOR ACTIVE ELEMENTS **/
+/** END COLOR ACTIVE ELEMENTS **/
+/** SHADOW OPACITY **/
+/** END SHADOW OPACITY **/
+/** FONT VARIABLES **/
+/** END FONT VARIABLES **/
+/** VARIABLES FOR COLOR SCHEME **/
+.omf-button {
+  padding: 10px;
+  border: none;
+  color: #ffffff;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0 2px 20px 0 rgba(53, 53, 53, 0.3);
+  cursor: pointer;
+  border-radius: 30px 30px;
+}
+
+.size-button-200 {
+  width: 220px;
+  height: 50px;
+}
+
+/** USE LIKE THAT 
+<button class="omf-button size-button-200"></button>
+**/
+
+/*# sourceMappingURL=omf-button.css.map */

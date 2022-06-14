@@ -1,0 +1,27 @@
+/********************** HEADER **********************/
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $bg_color;
+  box-shadow: 0 2px 20px 0 rgba($bg_color_4, $shadow_opacity);
+}
+
+header > .previous,
+header > .logo,
+header > .empty {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header > .logo {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+header > .logo > img {
+  max-width: 160px;
+}
+
+/********************** END HEADER **********************/

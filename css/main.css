@@ -1,0 +1,100 @@
+/** BG COLOR **/
+/** END BG COLOR **/
+/** COLOR ACTIVE ELEMENTS **/
+/** END COLOR ACTIVE ELEMENTS **/
+/** SHADOW OPACITY **/
+/** END SHADOW OPACITY **/
+/** FONT VARIABLES **/
+/** END FONT VARIABLES **/
+/** IMPORT VARIABLES **/
+/** IMPORT GLOBAL MIXIN **/
+/********************** GENERAL **********************/
+@import "omf-button.css";
+html,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 5px;
+}
+
+* {
+  box-sizing: border-box;
+  /** font-family: "Raleway", sans-serif;**/
+}
+
+h1, h2, h3, h4, p, a {
+  color: black;
+}
+
+/********************** END GENERAL **********************/
+/** IMPORT GLOBAL CSS FOR ALL PAGES **/
+/** IMPORT BUTTON CSS **/
+/********************** HEADER **********************/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 20px 0 rgba(53, 53, 53, 0.3);
+}
+
+header > .previous,
+header > .logo,
+header > .empty {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header > .logo {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+header > .logo > img {
+  max-width: 160px;
+}
+
+/********************** END HEADER **********************/
+/** IMPORT HEADER STYLES **/
+/********************** SECTION ACCUEIL ********************/
+#accueil {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+#accueil > .geolocalisation {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  background-color: #eaeaea;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#accueil > .home {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#accueil > .home > p,
+#accueil > .home > h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/********************** END SECTION ACCUEIL ******************/
+/** IMPORT OTHER STYLES **/
+/********************** FOOTER SECTION **********************/
+/********************** END FOOTER SECTION **********************/
+/** IMPORT FOOTER STYLES **/
+
+/*# sourceMappingURL=main.css.map */

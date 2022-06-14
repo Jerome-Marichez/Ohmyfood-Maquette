@@ -1,0 +1,19 @@
+/********************** GENERAL **********************/
+html,
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin-top: 5px;
+}
+* {
+  box-sizing: border-box;
+  /** font-family: "Raleway", sans-serif;**/
+}
+
+h1,h2,h3,h4,p,a {
+  color: $font_color; 
+}
+/********************** END GENERAL **********************/
+
