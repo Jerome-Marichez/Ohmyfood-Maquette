@@ -1,4 +1,5 @@
 /********************** GENERAL **********************/
+
 html,
 * {
   margin: 0;
@@ -12,8 +13,15 @@ main {
   /** font-family: "Raleway", sans-serif;**/
 }
 
-h1,h2,h3,h4,p,a {
-  color: $font_color; 
+h1,
+h2,
+h3,
+h4,
+p,
+a,.texte {
+  color: $font_color;
+  font-family: $font_text;
 }
-/********************** END GENERAL **********************/
 
+
+/********************** END GENERAL **********************/

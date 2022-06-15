@@ -1,20 +1,29 @@
 @import "variables.scss"; /** VARIABLES FOR COLOR SCHEME **/
 
 .omf-button {
+  transition: 0.5s;
   padding: 10px;
   border: none;
-  color: $bg_color;
+  color: white;
+  font-family: $font_text;
   background: linear-gradient($secondary, $primary);
   box-shadow: 0 2px 20px 0 rgba($bg_color_4, $shadow_opacity);
   cursor: pointer;
   border-radius: 30px 30px;
 }
 
-.size-button-200 {
+.omf-button:hover {
+  transition: 0.5s;
+  box-shadow: 0 2px 20px 0 rgba($bg_color_4, $shadow_opacity * 1.5);
+  filter: brightness(1.1);
+}
+
+.size-button {
+  font-size: 16px;
   width: 220px;
   height: 50px;
 }
 
 /** USE LIKE THAT 
-<button class="omf-button size-button-200"></button>
+<button class="omf-button size-button"></button>
 **/

@@ -8,22 +8,31 @@
 /** END FONT VARIABLES **/
 /** VARIABLES FOR COLOR SCHEME **/
 .omf-button {
+  transition: 0.5s;
   padding: 10px;
   border: none;
-  color: #ffffff;
+  color: white;
+  font-family: "Roboto", sans-serif;
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 0 2px 20px 0 rgba(53, 53, 53, 0.3);
+  box-shadow: 0 2px 20px 0 rgba(53, 53, 53, 0.35);
   cursor: pointer;
   border-radius: 30px 30px;
 }
 
-.size-button-200 {
+.omf-button:hover {
+  transition: 0.5s;
+  box-shadow: 0 2px 20px 0 rgba(53, 53, 53, 0.525);
+  filter: brightness(1.1);
+}
+
+.size-button {
+  font-size: 16px;
   width: 220px;
   height: 50px;
 }
 
 /** USE LIKE THAT 
-<button class="omf-button size-button-200"></button>
+<button class="omf-button size-button"></button>
 **/
 
 /*# sourceMappingURL=omf-button.css.map */
