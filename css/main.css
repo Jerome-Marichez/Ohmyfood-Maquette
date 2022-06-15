@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 /** BG COLOR **/
 /** END BG COLOR **/
@@ -23,7 +24,6 @@ main {
 
 * {
   box-sizing: border-box;
-  /** font-family: "Raleway", sans-serif;**/
 }
 
 h1,
@@ -31,13 +31,30 @@ h2,
 h3,
 h4,
 p,
-a, .texte {
+a,
+.texte {
   color: black;
   font-family: "Roboto", sans-serif;
 }
 
+.texte {
+  font-weight: bold;
+}
+
+.fontawesome {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+.icone_geolocalisation::before {
+  position: absolute;
+  margin-left: -30px;
+  content: "";
+  color: black;
+}
+
 /********************** END GENERAL **********************/
-/** IMPORT GLOBAL CSS FOR ALL PAGES **/
+/** IMPORT GLOBAL CSS FOR FONTS HTML,* SELECTOR **/
 /** IMPORT BUTTON CSS **/
 /********************** HEADER **********************/
 header {
@@ -88,7 +105,7 @@ header > .logo > img {
 #accueil > .home {
   margin-left: 18px;
   margin-right: 18px;
-  margin-top: 33px;
+  margin-top: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,6 +128,23 @@ header > .logo > img {
 }
 
 /********************** END SECTION ACCUEIL ******************/
+/********************** SECTION FONCTIONNEMENT ********************/
+#fonctionnement {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding-bottom: 70px;
+}
+
+/********************** END SECTION FONCTIONNEMENT ******************/
+/********************** SECTION RESTAURANTS ********************/
+/********************** END SECTION RESTAURANTS ******************/
+/********************** SECTION FOOTER ********************/
+/********************** END SECTION FOOTER ******************/
 /** IMPORT OTHER STYLES **/
 /********************** FOOTER SECTION **********************/
 /********************** END FOOTER SECTION **********************/

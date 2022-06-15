@@ -8,9 +8,9 @@ html,
 main {
   margin-top: 5px;
 }
+
 * {
   box-sizing: border-box;
-  /** font-family: "Raleway", sans-serif;**/
 }
 
 h1,
@@ -18,10 +18,23 @@ h2,
 h3,
 h4,
 p,
-a,.texte {
+a,
+.texte {
   color: $font_color;
   font-family: $font_text;
 }
+.texte {
+  font-weight: bold;
+}
 
-
+.fontawesome {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+.icone_geolocalisation::before {
+  position: absolute;
+  margin-left: -30px;
+  content: "\f3c5";
+  color: $font_color;
+}
 /********************** END GENERAL **********************/
