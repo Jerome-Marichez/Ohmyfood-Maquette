@@ -24,4 +24,11 @@ header > .logo > img {
   max-width: 160px;
 }
 
+.icone_geolocalisation::before {
+  position: absolute;
+  margin-left: -30px;
+  content: "\f3c5";
+  color: $font_color;
+}
+
 /********************** END HEADER **********************/

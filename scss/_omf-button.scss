@@ -4,17 +4,17 @@
   transition: 0.5s;
   padding: 10px;
   border: none;
-  color: white;
+  color: $font_color_2;
   font-family: $font_text;
   background: linear-gradient($secondary, $primary);
-  box-shadow: 0 2px 20px 0 rgba($bg_color_4, $shadow_opacity);
+  box-shadow: 0 2px 20px 0 rgba($shadow, $shadow_opacity * 2);
   cursor: pointer;
   border-radius: 30px 30px;
 }
 
 .omf-button:hover {
   transition: 0.5s;
-  box-shadow: 0 2px 20px 0 rgba($bg_color_4, $shadow_opacity * 1.5);
+  box-shadow: 0 2px 20px 0 rgba($shadow, $shadow_opacity * 4);
   filter: brightness(1.1);
 }
 

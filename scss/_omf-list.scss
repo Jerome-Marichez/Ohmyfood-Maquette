@@ -1,0 +1,44 @@
+@import "variables.scss"; /** VARIABLES FOR COLOR SCHEME **/
+
+.group-omf-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+
+.group-omf-list > button:nth-child(1) {
+  position: absolute;
+  border: none;
+  border-radius: 30px 30px;
+  background-color: $primary;
+  color: $font_color_2;
+  max-height: 25px;
+  min-height: 25px;
+  min-width: 25px;
+}
+
+.group-omf-list > button:nth-child(2) {
+  color: $font_color;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s;
+  font-family: $font_text;
+  cursor: pointer;
+  background-color: $bg_color_2;
+  padding: 10px;
+  border: none;
+  border-radius: 20px 20px;
+  margin-left: 15px;
+  min-height: 70px;
+  min-width: 100%;
+  box-shadow: 0px 7px 29px 0px rgba($shadow, $shadow_opacity);
+}
+
+.group-omf-list > button > .icone_smartphone::before {
+  position: absolute;
+  margin-left: -125px;
+  content: "\f3cf";
+  color: $bg_color_4;
+  filter: brightness(2.5);
+}
