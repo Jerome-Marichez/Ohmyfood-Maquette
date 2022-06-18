@@ -18,7 +18,7 @@
   position: relative;
   min-height: 180px;
   width: 100%;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -27,9 +27,9 @@
   position: absolute;
   right: 10px;
   top: 15px; // or whatever the value you need
-  background-color: green;
+  background-color: #99e2d0;
   width: 77px;
-  height: 25px;
+  height: 30px;
 }
 
 .omf-cards > .image:nth-child(1) {
@@ -48,8 +48,10 @@
 .nouveau > p {
   text-align: center;
   vertical-align: baseline;
-  margin-top: 4px;
+  margin-top: 7px;
   font-family: $font_text;
+  color: #01946f;
+  font-weight: bold;
   font-size: 14px;
 }
 
