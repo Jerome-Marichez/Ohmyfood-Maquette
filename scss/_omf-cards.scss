@@ -3,8 +3,9 @@
 @import "global.scss"; /** IMPORT FOR GLOBAL CLASS **/
 
 .omf-cards {
+  @include flex-basic(column, null, null, null, null);
   background-color: $bg_color;
-  height: 200px;
+  height: 250px;
   box-shadow: 0px 7px 29px 0px rgba($shadow, $shadow_opacity);
   color: $font_color;
   font-family: $font_text;
@@ -13,7 +14,18 @@
 }
 
 .omf-cards > .image {
+  min-height: 180px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+
+.omf-cards > .image:nth-child(1) {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
 .omf-cards > .image > .nouveau {
 }
 .omf-cards > .description {

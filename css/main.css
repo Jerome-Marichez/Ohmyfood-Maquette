@@ -294,13 +294,27 @@ a,
 /********************** END GENERAL **********************/
 /** IMPORT FOR GLOBAL CLASS **/
 .omf-cards {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
-  height: 200px;
+  height: 250px;
   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
   color: black;
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   border-radius: 20px 20px;
+}
+
+.omf-cards > .image {
+  min-height: 180px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.omf-cards > .image:nth-child(1) {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 /** IMPORT CARDS SCSS **/
