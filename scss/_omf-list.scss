@@ -36,33 +36,32 @@
 }
 
 .group-omf-list > button:nth-child(2):hover {
-   background-color: $primary;
+   background-color: rgba($primary,0.25);
+   box-shadow: 0px 7px 29px 0px rgba($shadow, $shadow_opacity*2);
 }
 
-.group-omf-list > button:nth-child(2):hover div  {
+.group-omf-list > button:nth-child(2):hover > div::before  {
    color: $primary;
 }
-
 
 %icone_settings {
   font-size: 20px;
   position: absolute;
   margin-left: -130px;
-  color: $bg_color_4;
-  filter: brightness(2.5);
+  color: rgba($bg_color_4,0.6);
 }
 
-.group-omf-list > button > .icone_smartphone::before {
+.group-omf-list > button .icone_smartphone::before {
   @extend %icone_settings;
   content: "\f3cf";
 }
 
-.group-omf-list > button > .icone_list::before {
+.group-omf-list > button .icone_list::before {
   @extend %icone_settings;
   content: "\f03a";
 }
 
-.group-omf-list > button > .icone_shop::before {
+.group-omf-list > button .icone_shop::before {
   @extend %icone_settings;
   content: "\f54e";
 }

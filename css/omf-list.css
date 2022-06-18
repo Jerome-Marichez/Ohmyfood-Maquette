@@ -85,30 +85,30 @@ a,
 }
 
 .group-omf-list > button:nth-child(2):hover {
-  background-color: #9356dc;
+  background-color: rgba(147, 86, 220, 0.25);
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.4);
 }
 
-.group-omf-list > button:nth-child(2):hover div {
+.group-omf-list > button:nth-child(2):hover > div::before {
   color: #9356dc;
 }
 
-.group-omf-list > button > .icone_shop::before, .group-omf-list > button > .icone_list::before, .group-omf-list > button > .icone_smartphone::before {
+.group-omf-list > button .icone_shop::before, .group-omf-list > button .icone_list::before, .group-omf-list > button .icone_smartphone::before {
   font-size: 20px;
   position: absolute;
   margin-left: -130px;
-  color: #353535;
-  filter: brightness(2.5);
+  color: rgba(53, 53, 53, 0.6);
 }
 
-.group-omf-list > button > .icone_smartphone::before {
+.group-omf-list > button .icone_smartphone::before {
   content: "";
 }
 
-.group-omf-list > button > .icone_list::before {
+.group-omf-list > button .icone_list::before {
   content: "";
 }
 
-.group-omf-list > button > .icone_shop::before {
+.group-omf-list > button .icone_shop::before {
   content: "";
 }
 
