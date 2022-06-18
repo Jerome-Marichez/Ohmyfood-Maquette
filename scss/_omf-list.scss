@@ -1,8 +1,9 @@
 @import "variables.scss"; /** VARIABLES FOR COLOR SCHEME **/
+@import "mixin.scss";
+@import "global.scss"; /** IMPORT FOR GLOBAL CLASS **/
 
 .group-omf-list {
-  display: flex;
-  align-items: center;
+  @include flex-basic(row, null, null, null, center);
   margin-bottom: 30px;
   margin-right: 15px;
 }
@@ -13,9 +14,8 @@
   border-radius: 30px 30px;
   background-color: $primary;
   color: $font_color_2;
-  max-height: 25px;
-  min-height: 25px;
-  min-width: 25px;
+  height: 25px;
+  width: 25px;
 }
 
 .group-omf-list > button:nth-child(2) {
@@ -30,15 +30,39 @@
   border: none;
   border-radius: 20px 20px;
   margin-left: 15px;
-  min-height: 70px;
+  height: 70px;
   min-width: 100%;
   box-shadow: 0px 7px 29px 0px rgba($shadow, $shadow_opacity);
 }
 
-.group-omf-list > button > .icone_smartphone::before {
+.group-omf-list > button:nth-child(2):hover {
+   background-color: $primary;
+}
+
+.group-omf-list > button:nth-child(2):hover div  {
+   color: $primary;
+}
+
+
+%icone_settings {
+  font-size: 20px;
   position: absolute;
-  margin-left: -125px;
-  content: "\f3cf";
+  margin-left: -130px;
   color: $bg_color_4;
   filter: brightness(2.5);
+}
+
+.group-omf-list > button > .icone_smartphone::before {
+  @extend %icone_settings;
+  content: "\f3cf";
+}
+
+.group-omf-list > button > .icone_list::before {
+  @extend %icone_settings;
+  content: "\f03a";
+}
+
+.group-omf-list > button > .icone_shop::before {
+  @extend %icone_settings;
+  content: "\f54e";
 }

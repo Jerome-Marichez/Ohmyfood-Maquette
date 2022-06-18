@@ -7,6 +7,47 @@
 /** FONT VARIABLES **/
 /** END FONT VARIABLES **/
 /** VARIABLES FOR COLOR SCHEME **/
+/********************** GENERAL **********************/
+html,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+main {
+  margin-top: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+.texte {
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.texte {
+  font-weight: bold;
+}
+
+.fontawesome {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/********************** END GENERAL **********************/
+/** IMPORT FOR GLOBAL CLASS **/
 .omf-button {
   transition: 0.5s;
   padding: 10px;

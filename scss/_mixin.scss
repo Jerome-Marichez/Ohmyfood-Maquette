@@ -1,0 +1,19 @@
+@mixin flex-basic(
+  $flex-direction,
+  $flex-wrap,
+  $align-content,
+  $justify-content,
+  $align-items
+) {
+  display: flex;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+  align-content: $align-content;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin margin-left-and-right($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
