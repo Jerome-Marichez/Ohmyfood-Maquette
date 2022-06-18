@@ -39,7 +39,7 @@
 .omf-cards > .image .nouveau {
   position: absolute;
   right: 10px;
-  top: 15px; // or whatever the value you need
+  top: 15px; 
   background-color: #99e2d0;
   width: 77px;
   height: 30px;
@@ -61,18 +61,19 @@
 }
 .omf-cards > .description .texte {
   @include flex-basic(column, wrap, null, center, null);
-  margin-left: 10px;
+  margin-left: 12px;
   margin-bottom: 5px;
 }
 .omf-cards .texte p {
   font-weight: normal;
+  margin-top: 5px;
 }
 
 .omf-cards > .description .coeur {
   @include flex-basic(row, null, null, flex-end, center);
   display: flex;
   flex: 1;
-    margin-right: 5px;
+  margin-right: 5px;
 }
 .omf-cards > .description .coeur::before {
   font-size: 20px;

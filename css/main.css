@@ -362,12 +362,13 @@ a,
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 10px;
+  margin-left: 12px;
   margin-bottom: 5px;
 }
 
 .omf-cards .texte p {
   font-weight: normal;
+  margin-top: 5px;
 }
 
 .omf-cards > .description .coeur {
