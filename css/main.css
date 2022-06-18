@@ -308,20 +308,11 @@ a,
 
 .omf-cards > .image {
   position: relative;
-  min-height: 180px;
+  min-height: 172px;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.omf-cards > .image > .nouveau {
-  position: absolute;
-  right: 10px;
-  top: 15px;
-  background-color: #99e2d0;
-  width: 77px;
-  height: 30px;
 }
 
 .omf-cards > .image:nth-child(1) {
@@ -340,6 +331,15 @@ a,
   background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
+.omf-cards > .image .nouveau {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: #99e2d0;
+  width: 77px;
+  height: 30px;
+}
+
 .nouveau > p {
   text-align: center;
   vertical-align: baseline;
@@ -348,6 +348,43 @@ a,
   color: #01946f;
   font-weight: bold;
   font-size: 14px;
+}
+
+.omf-cards > .description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.omf-cards > .description .texte {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.omf-cards .texte p {
+  font-weight: normal;
+}
+
+.omf-cards > .description .coeur {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  margin-right: 5px;
+}
+
+.omf-cards > .description .coeur::before {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  content: "";
 }
 
 /** IMPORT CARDS SCSS **/
