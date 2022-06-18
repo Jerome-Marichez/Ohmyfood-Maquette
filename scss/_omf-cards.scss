@@ -1,0 +1,24 @@
+@import "variables.scss"; /** VARIABLES FOR COLOR SCHEME **/
+@import "mixin.scss";
+@import "global.scss"; /** IMPORT FOR GLOBAL CLASS **/
+
+.omf-cards {
+  background-color: $bg_color;
+  height: 200px;
+  box-shadow: 0px 7px 29px 0px rgba($shadow, $shadow_opacity);
+  color: $font_color;
+  font-family: $font_text;
+  cursor: pointer;
+  border-radius: 20px 20px;
+}
+
+.omf-cards > .image {
+}
+.omf-cards > .image > .nouveau {
+}
+.omf-cards > .description {
+}
+.omf-cards > .description > .title {
+}
+.omf-cards > .description > .title > .coeur {
+}

@@ -50,6 +50,13 @@
 /********************** END SECTION FONCTIONNEMENT ******************/
 
 /********************** SECTION RESTAURANTS ********************/
+#restaurants {
+  @include flex-basic(column, wrap, null, null, null);
+  @include margin-left-and-right(20px);
+  background-color: $bg_color;
+  padding-bottom: 70px;
+}
+
 /********************** END SECTION RESTAURANTS ******************/
 
 /********************** SECTION FOOTER ********************/
