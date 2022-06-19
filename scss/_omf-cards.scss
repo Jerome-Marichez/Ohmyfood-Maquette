@@ -1,0 +1,89 @@
+@import "variables.scss"; /** VARIABLES FOR COLOR SCHEME **/
+@import "mixin.scss";
+@import "global.scss"; /** IMPORT FOR GLOBAL CLASS **/
+
+.omf-cards {
+  @include flex-basic(column, null, null, null, null);
+  background-color: $bg_color;
+  height: 250px;
+  box-shadow: 0px 7px 29px 0px rgba($shadow, $shadow_opacity * 2);
+  color: $font_color;
+  font-family: $font_text;
+  cursor: pointer;
+  border-radius: 20px 20px;
+  margin-bottom: 20px;
+}
+
+.omf-cards > .image {
+  position: relative;
+  min-height: 172px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ .omf-cards > .image:nth-child(1) {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+ .omf-cards:nth-child(2) .image {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+  .omf-cards:nth-child(3) .image{
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+.image:nth-child(4) {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.omf-cards > .image .nouveau {
+  position: absolute;
+  right: 10px;
+  top: 15px; 
+  background-color: #99e2d0;
+  width: 77px;
+  height: 30px;
+}
+
+.nouveau > p {
+  text-align: center;
+  vertical-align: baseline;
+  margin-top: 7px;
+  font-family: $font_text;
+  color: #01946f;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.omf-cards > .description {
+  @include flex-basic(row, wrap, null, null, null);
+  flex: 1;
+}
+.omf-cards > .description .texte {
+  @include flex-basic(column, wrap, null, center, null);
+  margin-left: 12px;
+  margin-bottom: 5px;
+}
+.omf-cards .texte p {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.omf-cards > .description .coeur {
+  @include flex-basic(row, null, null, flex-end, center);
+  display: flex;
+  flex: 1;
+  margin-right: 5px;
+}
+.omf-cards > .description .coeur::before {
+  font-size: 22px;
+  height: 40px;
+  width: 40px;
+  content: "\f004";
+  color: $bg_color;
+  text-shadow: -1px 0 $font_color, 0 1px $font_color, 1px 0 $font_color, 0 -1px $font_color;
+  &:hover {
+    color: $primary;
+  }
+}
+

@@ -3,8 +3,9 @@
 @import "variables.scss"; /** IMPORT VARIABLES **/
 @import "mixin.scss"; /** IMPORT GLOBAL MIXIN **/
 @import "global.scss"; /** IMPORT GLOBAL CSS FOR FONTS HTML,* SELECTOR **/
-@import "omf-button.css"; /** IMPORT BUTTON CSS **/
-@import "omf-list.css"; /** IMPORT LIST BUTTON CSS **/
+@import "omf-button.scss"; /** IMPORT BUTTON CSS **/
+@import "omf-list.scss"; /** IMPORT LIST BUTTON CSS **/
+@import "omf-cards.scss"; /** IMPORT CARDS SCSS **/ 
 @import "header.scss"; /** IMPORT HEADER STYLES **/
 @import "styles.scss"; /** IMPORT OTHER STYLES **/
 @import "footer.scss"; /** IMPORT FOOTER STYLES **/

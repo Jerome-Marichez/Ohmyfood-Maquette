@@ -11,8 +11,6 @@
 /** IMPORT VARIABLES **/
 /** IMPORT GLOBAL MIXIN **/
 /********************** GENERAL **********************/
-@import "omf-button.css";
-@import "omf-list.css";
 html,
 * {
   margin: 0;
@@ -53,8 +51,348 @@ a,
 
 /********************** END GENERAL **********************/
 /** IMPORT GLOBAL CSS FOR FONTS HTML,* SELECTOR **/
+/** BG COLOR **/
+/** END BG COLOR **/
+/** COLOR ACTIVE ELEMENTS **/
+/** END COLOR ACTIVE ELEMENTS **/
+/** SHADOW OPACITY **/
+/** END SHADOW OPACITY **/
+/** FONT VARIABLES **/
+/** END FONT VARIABLES **/
+/** VARIABLES FOR COLOR SCHEME **/
+/********************** GENERAL **********************/
+html,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+main {
+  margin-top: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+.texte {
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.texte {
+  font-weight: bold;
+}
+
+.fontawesome {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/********************** END GENERAL **********************/
+/** IMPORT FOR GLOBAL CLASS **/
+.omf-button {
+  transition: 0.5s;
+  padding: 10px;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0 2px 20px 0 rgba(100, 100, 111, 0.4);
+  cursor: pointer;
+  border-radius: 30px 30px;
+}
+
+.omf-button:hover {
+  transition: 0.5s;
+  box-shadow: 0 2px 20px 0 rgba(100, 100, 111, 0.8);
+  filter: brightness(1.1);
+}
+
+.size-button {
+  font-size: 16px;
+  width: 220px;
+  height: 50px;
+}
+
+/** USE LIKE THAT 
+<button class="omf-button size-button"></button>
+**/
 /** IMPORT BUTTON CSS **/
+/** BG COLOR **/
+/** END BG COLOR **/
+/** COLOR ACTIVE ELEMENTS **/
+/** END COLOR ACTIVE ELEMENTS **/
+/** SHADOW OPACITY **/
+/** END SHADOW OPACITY **/
+/** FONT VARIABLES **/
+/** END FONT VARIABLES **/
+/** VARIABLES FOR COLOR SCHEME **/
+/********************** GENERAL **********************/
+html,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+main {
+  margin-top: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+.texte {
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.texte {
+  font-weight: bold;
+}
+
+.fontawesome {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/********************** END GENERAL **********************/
+/** IMPORT FOR GLOBAL CLASS **/
+.group-omf-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+
+.group-omf-list > button:nth-child(1) {
+  position: absolute;
+  border: none;
+  border-radius: 30px 30px;
+  background-color: #9356dc;
+  color: white;
+  height: 25px;
+  width: 25px;
+}
+
+.group-omf-list > button:nth-child(2) {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  background-color: #f6f6f6;
+  padding: 10px;
+  border: none;
+  border-radius: 20px 20px;
+  margin-left: 15px;
+  height: 70px;
+  min-width: 100%;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+.group-omf-list > button:nth-child(2):hover {
+  background-color: rgba(147, 86, 220, 0.25);
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.4);
+}
+
+.group-omf-list > button:nth-child(2):hover > div::before {
+  color: #9356dc;
+}
+
+.group-omf-list > button .icone_shop::before, .group-omf-list > button .icone_list::before, .group-omf-list > button .icone_smartphone::before {
+  font-size: 20px;
+  position: absolute;
+  margin-left: -130px;
+  color: rgba(53, 53, 53, 0.6);
+}
+
+.group-omf-list > button .icone_smartphone::before {
+  content: "";
+}
+
+.group-omf-list > button .icone_list::before {
+  content: "";
+}
+
+.group-omf-list > button .icone_shop::before {
+  content: "";
+}
+
 /** IMPORT LIST BUTTON CSS **/
+/** BG COLOR **/
+/** END BG COLOR **/
+/** COLOR ACTIVE ELEMENTS **/
+/** END COLOR ACTIVE ELEMENTS **/
+/** SHADOW OPACITY **/
+/** END SHADOW OPACITY **/
+/** FONT VARIABLES **/
+/** END FONT VARIABLES **/
+/** VARIABLES FOR COLOR SCHEME **/
+/********************** GENERAL **********************/
+html,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+main {
+  margin-top: 5px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+.texte {
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.texte {
+  font-weight: bold;
+}
+
+.fontawesome {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
+/********************** END GENERAL **********************/
+/** IMPORT FOR GLOBAL CLASS **/
+.omf-cards {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  height: 250px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.4);
+  color: black;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  border-radius: 20px 20px;
+  margin-bottom: 20px;
+}
+
+.omf-cards > .image {
+  position: relative;
+  min-height: 172px;
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.omf-cards > .image:nth-child(1) {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.omf-cards:nth-child(2) .image {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.omf-cards:nth-child(3) .image {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.image:nth-child(4) {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.omf-cards > .image .nouveau {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  background-color: #99e2d0;
+  width: 77px;
+  height: 30px;
+}
+
+.nouveau > p {
+  text-align: center;
+  vertical-align: baseline;
+  margin-top: 7px;
+  font-family: "Roboto", sans-serif;
+  color: #01946f;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.omf-cards > .description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.omf-cards > .description .texte {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 12px;
+  margin-bottom: 5px;
+}
+
+.omf-cards .texte p {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.omf-cards > .description .coeur {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  margin-right: 5px;
+}
+
+.omf-cards > .description .coeur::before {
+  font-size: 22px;
+  height: 40px;
+  width: 40px;
+  content: "";
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.omf-cards > .description .coeur::before:hover {
+  color: #9356dc;
+}
+
+/** IMPORT CARDS SCSS **/
 /********************** HEADER **********************/
 header {
   display: flex;
@@ -158,6 +496,16 @@ header > .logo > img {
 
 /********************** END SECTION FONCTIONNEMENT ******************/
 /********************** SECTION RESTAURANTS ********************/
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #ffffff;
+  padding-bottom: 70px;
+}
+
 /********************** END SECTION RESTAURANTS ******************/
 /********************** SECTION FOOTER ********************/
 /********************** END SECTION FOOTER ******************/
