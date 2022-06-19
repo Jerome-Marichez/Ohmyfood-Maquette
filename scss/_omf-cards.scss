@@ -23,23 +23,23 @@
   background-repeat: no-repeat;
 }
 
- .omf-cards > .image:nth-child(1) {
-  background-image: url($path_image+"restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+.omf-cards > .image:nth-child(1) {
+  background-image: url($path_image + "restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
- .omf-cards:nth-child(2) .image {
-  background-image: url($path_image+"restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+.omf-cards:nth-child(2) .image {
+  background-image: url($path_image + "restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
-  .omf-cards:nth-child(3) .image{
-  background-image: url($path_image+"restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+.omf-cards:nth-child(3) .image {
+  background-image: url($path_image + "restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 .image:nth-child(4) {
-  background-image: url($path_image+"restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url($path_image + "restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .omf-cards > .image .nouveau {
   position: absolute;
   right: 10px;
-  top: 15px; 
+  top: 15px;
   background-color: #99e2d0;
   width: 77px;
   height: 30px;
@@ -81,9 +81,9 @@
   width: 40px;
   content: "\f004";
   color: $bg_color;
-  text-shadow: -1px 0 $font_color, 0 1px $font_color, 1px 0 $font_color, 0 -1px $font_color;
+  text-shadow: -1px 0 $font_color, 0 1px $font_color, 1px 0 $font_color,
+    0 -1px $font_color;
   &:hover {
     color: $primary;
   }
 }
-
