@@ -24,16 +24,16 @@
 }
 
  .omf-cards > .image:nth-child(1) {
-  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-image: url($path_image+"restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
  .omf-cards:nth-child(2) .image {
-  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-image: url($path_image+"restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
   .omf-cards:nth-child(3) .image{
-  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-image: url($path_image+"restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 .image:nth-child(4) {
-  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-image: url($path_image+"restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .omf-cards > .image .nouveau {
