@@ -213,7 +213,6 @@ a,
   min-width: 100%;
   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
 }
-
 .group-omf-list > button:nth-child(2):hover {
   background-color: rgba(147, 86, 220, 0.25);
   box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.4);
@@ -386,8 +385,11 @@ a,
   height: 40px;
   width: 40px;
   content: "";
-  color: white;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: #ffffff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.omf-cards > .description .coeur::before:hover {
+  color: #9356dc;
 }
 
 /** IMPORT CARDS SCSS **/

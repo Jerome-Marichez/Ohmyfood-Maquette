@@ -80,7 +80,10 @@
   height: 40px;
   width: 40px;
   content: "\f004";
-  color: white;
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: $bg_color;
+  text-shadow: -1px 0 $font_color, 0 1px $font_color, 1px 0 $font_color, 0 -1px $font_color;
+  &:hover {
+    color: $primary;
+  }
 }
 
