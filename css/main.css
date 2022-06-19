@@ -382,10 +382,12 @@ a,
 }
 
 .omf-cards > .description .coeur::before {
-  font-size: 20px;
+  font-size: 22px;
   height: 40px;
   width: 40px;
-  content: "";
+  content: "";
+  color: white;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 
 /** IMPORT CARDS SCSS **/

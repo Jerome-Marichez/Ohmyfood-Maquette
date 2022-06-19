@@ -76,8 +76,11 @@
   margin-right: 5px;
 }
 .omf-cards > .description .coeur::before {
-  font-size: 20px;
+  font-size: 22px;
   height: 40px;
   width: 40px;
-  content: "\f03a";
+  content: "\f004";
+  color: white;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
+
