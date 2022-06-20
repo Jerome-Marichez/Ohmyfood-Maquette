@@ -36,10 +36,10 @@
 /********************** SECTION FONCTIONNEMENT ********************/
 #fonctionnement {
   @include flex-basic(column, wrap, null, null, null);
-  @include margin-left-and-right(20px);
+  @include padding-left-and-right(20px);
   margin-top: 30px;
   background-color: $bg_color;
-  padding-bottom: 70px;
+  padding-bottom: 32px;
 }
 #fonctionnement > h2 {
   margin-bottom: 20px;
@@ -52,11 +52,14 @@
 /********************** SECTION RESTAURANTS ********************/
 #restaurants {
   @include flex-basic(column, wrap, null, null, null);
-  @include margin-left-and-right(20px);
-  background-color: $bg_color;
-  padding-bottom: 70px;
+  @include padding-left-and-right(20px);
+  background-color: $bg_color_2;
+  padding-bottom: 44px;
 }
-
+#restaurants > h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
 /********************** END SECTION RESTAURANTS ******************/
 
 /********************** SECTION FOOTER ********************/

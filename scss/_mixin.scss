@@ -17,3 +17,7 @@
   margin-left: $value;
   margin-right: $value;
 }
+@mixin padding-left-and-right($value) {
+  padding-left: $value;
+  padding-right: $value;
+}

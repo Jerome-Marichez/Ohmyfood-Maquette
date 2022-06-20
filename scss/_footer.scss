@@ -4,6 +4,7 @@ footer {
   padding: 23px;
   background-color: $bg_color_4;
 }
+
 footer > .logo-footer { 
   @include flex-basic(column, null, null, null, null);
   width: 100px;
@@ -12,6 +13,7 @@ footer > .logo-footer {
 footer > .logo-footer > img {
    filter: invert(1);
 }
+
 footer > ul {
   @include flex-basic(column, null, null, null, null);
   list-style: none;
