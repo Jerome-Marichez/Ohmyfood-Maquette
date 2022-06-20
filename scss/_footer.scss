@@ -1,3 +1,17 @@
 /********************** FOOTER SECTION **********************/
+footer {
+  @include flex-basic(column, null, null, null, null);
+  padding-left: 10px;
+  background-color: #353535;
+}
+footer > .logo-image { 
 
+}
+footer > ul {
+  @include flex-basic(column, null, null, null, null);
+  gap: 10px;
+}
+footer > ul > li {
+  color: $font_color_2;
+}
 /********************** END FOOTER SECTION **********************/
