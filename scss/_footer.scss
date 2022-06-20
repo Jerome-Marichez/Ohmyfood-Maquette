@@ -4,8 +4,7 @@ footer {
   padding-left: 10px;
   background-color: #353535;
 }
-footer > .logo-image { 
-
+footer > .logo-image {
 }
 footer > ul {
   @include flex-basic(column, null, null, null, null);
