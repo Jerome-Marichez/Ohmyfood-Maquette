@@ -53,7 +53,7 @@
 #restaurants {
   @include flex-basic(column, wrap, null, null, null);
   @include padding-left-and-right(20px);
-  background-color: red;
+  background-color: $bg_color_2;
   padding-bottom: 44px;
 }
 #restaurants > h2 {
