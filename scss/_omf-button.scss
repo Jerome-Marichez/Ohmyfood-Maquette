@@ -11,12 +11,11 @@
   box-shadow: 0 2px 20px 0 rgba($shadow, $shadow_opacity * 2);
   cursor: pointer;
   border-radius: 30px 30px;
-}
-
-.omf-button:hover {
-  transition: 0.5s;
-  box-shadow: 0 2px 20px 0 rgba($shadow, $shadow_opacity * 4);
-  filter: brightness(1.1);
+  &:hover {
+    transition: 0.5s;
+    box-shadow: 0 2px 20px 0 rgba($shadow, $shadow_opacity * 4);
+    filter: brightness(1.1);
+  }
 }
 
 .size-button {
