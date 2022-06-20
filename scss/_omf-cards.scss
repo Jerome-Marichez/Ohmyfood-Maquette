@@ -45,7 +45,7 @@
   height: 30px;
 }
 
-.nouveau > p {
+.omf-cards .nouveau > p {
   text-align: center;
   vertical-align: baseline;
   margin-top: 7px;
@@ -69,21 +69,20 @@
   margin-top: 5px;
 }
 
-.omf-cards > .description .coeur {
+.omf-cards .position-icon {
   @include flex-basic(row, null, null, flex-end, center);
-  display: flex;
   flex: 1;
-  margin-right: 5px;
 }
-.omf-cards > .description .coeur::before {
-  font-size: 22px;
-  height: 40px;
-  width: 40px;
-  content: "\f004";
-  color: $bg_color;
-  text-shadow: -1px 0 $font_color, 0 1px $font_color, 1px 0 $font_color,
-    0 -1px $font_color;
-  &:hover {
+.omf-cards > .description .coeur {
+  &::before {
+    margin-right: 25px;
+    font-size: 22px;
+    content: "\f004";
+    color: $bg_color;
+    text-shadow: -1px 0 $font_color, 0 1px $font_color, 1px 0 $font_color,
+      0 -1px $font_color;
+  }
+  &:hover::before {
     color: $primary;
   }
 }
