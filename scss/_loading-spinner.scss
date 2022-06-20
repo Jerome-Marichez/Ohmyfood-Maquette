@@ -1,0 +1,47 @@
+.hidebody {
+  position: fixed;
+  background-color: $bg_color;
+  height: 100%;
+  width: 100%;
+  animation: showcontent 5s forwards;
+  z-index: 1;
+}
+@keyframes showcontent {
+  0% {
+  }
+  99% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 240px;
+  height: 240px;
+  margin: -120px 0 0 -120px;
+  border-left: 16px solid $primary;
+  border-right: 16px solid $secondary;
+  border-radius: 50%;
+  border-top: 16px solid $tertiary;
+  border-bottom: 16px solid $bg_color_2;
+  animation: spin 2s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  99% {
+    transform: rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
