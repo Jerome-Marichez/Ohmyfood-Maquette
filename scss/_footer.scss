@@ -1,16 +1,31 @@
 /********************** FOOTER SECTION **********************/
 footer {
   @include flex-basic(column, null, null, null, null);
-  padding-left: 10px;
-  background-color: #353535;
+  padding: 23px;
+  background-color: $bg_color_4;
 }
-footer > .logo-image {
+
+footer > .logo-footer { 
+  @include flex-basic(column, null, null, null, null);
+  width: 100px;
+  padding-bottom: 22px;;
 }
+footer > .logo-footer > img {
+   filter: invert(1);
+}
+
 footer > ul {
   @include flex-basic(column, null, null, null, null);
-  gap: 10px;
+  list-style: none;
+  gap: 7px;
 }
 footer > ul > li {
   color: $font_color_2;
+}
+
+footer > ul > li  i {
+font-size: 13px;
+min-width: 20px;
+text-align: center;
 }
 /********************** END FOOTER SECTION **********************/
