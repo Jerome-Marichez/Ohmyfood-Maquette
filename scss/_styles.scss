@@ -2,7 +2,7 @@
 #accueil {
   @include flex-basic(column, wrap, null, null, center);
   background-color: $bg_color_2;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 
 #accueil > .geolocalisation {
@@ -37,7 +37,7 @@
 #fonctionnement {
   @include flex-basic(column, wrap, null, null, null);
   @include padding-left-and-right(20px);
-  margin-top: 30px;
+  padding-top: 40px;
   background-color: $bg_color;
   padding-bottom: 32px;
 }
