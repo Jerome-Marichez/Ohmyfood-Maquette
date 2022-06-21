@@ -5,13 +5,13 @@ footer {
   background-color: $bg_color_4;
 }
 
-footer > .logo-footer { 
+footer > .logo-footer {
   @include flex-basic(column, null, null, null, null);
   width: 100px;
-  padding-bottom: 22px;;
+  padding-bottom: 22px;
 }
 footer > .logo-footer > img {
-   filter: invert(1);
+  filter: invert(1);
 }
 
 footer > ul {
@@ -23,9 +23,10 @@ footer > ul > li {
   color: $font_color_2;
 }
 
-footer > ul > li  i {
-font-size: 13px;
-min-width: 20px;
-text-align: center;
+footer > ul > li i {
+  font-size: 13px;
+  min-width: 20px;
+  text-align: center;
 }
+
 /********************** END FOOTER SECTION **********************/
