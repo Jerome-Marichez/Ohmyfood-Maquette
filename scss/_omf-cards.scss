@@ -65,6 +65,9 @@
   margin-left: 12px;
   margin-bottom: 5px;
 }
+.omf-cards .texte h3 {
+  margin-top: 14px;
+}
 .omf-cards .texte p {
   font-weight: normal;
   margin-top: 5px;
@@ -74,7 +77,7 @@
   @include flex-basic(row, null, null, flex-end, center);
   flex: 1;
 }
-.omf-cards > .description .coeur {
+.omf-cards .description .coeur {
   &::before {
     margin-right: 25px;
     font-size: 22px;

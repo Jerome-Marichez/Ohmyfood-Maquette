@@ -11,7 +11,6 @@ body {
 main {
   margin-top: 5px;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -21,16 +20,24 @@ h2,
 h3,
 h4,
 p,
-a,
 ul,
 li,
 .texte {
   color: $font_color;
   font-family: $font_text;
 }
+
+
 .texte {
   font-weight: bold;
 }
+a {
+  color: $font_color_2;
+  font-family: $font_text;
+  text-decoration: none;
+}
+
+
 
 .fontawesome {
   font-family: "Font Awesome 6 Free";
