@@ -3,6 +3,9 @@
 header {
   @include flex-basic(row, wrap, null, space-between, null);
   background-color: $bg_color;
+}
+
+.header-shadow {
   box-shadow: 0 2px 20px 0 rgba($bg_color_4, $shadow_opacity * 1.5);
 }
 

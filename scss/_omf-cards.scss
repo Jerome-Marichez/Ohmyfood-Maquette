@@ -79,7 +79,7 @@
 }
 .omf-cards .description .coeur {
   &::before {
-    transition: 1.0s;
+    transition: 1s;
     margin-right: 25px;
     font-size: 22px;
     content: "\f004";
@@ -88,7 +88,7 @@
       0 -1px $font_color;
   }
   &:hover::before {
-    transition: 1.0s;
+    transition: 1s;
     color: $primary;
   }
 }

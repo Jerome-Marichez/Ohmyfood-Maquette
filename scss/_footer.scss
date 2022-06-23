@@ -3,6 +3,7 @@ footer {
   @include flex-basic(column, null, null, null, null);
   padding: 23px;
   background-color: $bg_color_4;
+  padding-bottom: 40px;
 }
 
 footer > .logo-footer {
