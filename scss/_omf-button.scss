@@ -8,17 +8,17 @@
   color: $font_color_2;
   font-family: $font_text;
   background: linear-gradient($secondary, $primary);
-  box-shadow: 0 2px 20px 0 rgba($shadow, $shadow_opacity * 2);
+  box-shadow: 0 2px 20px 0 rgba($shadow_color, $shadow_opacity * 2);
   cursor: pointer;
   border-radius: 30px 30px;
   &:hover {
     transition: 0.5s;
-    box-shadow: 0 2px 20px 0 rgba($shadow, $shadow_opacity * 4);
+    box-shadow: 0 2px 20px 0 rgba($shadow_color, $shadow_opacity * 4);
     filter: brightness(1.1);
   }
 }
 
-.size-button {
+.size-button-home {
   font-size: 16px;
   width: 220px;
   height: 50px;

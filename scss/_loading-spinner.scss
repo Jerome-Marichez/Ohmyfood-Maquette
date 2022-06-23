@@ -3,18 +3,16 @@
   background-color: $bg_color;
   height: 100%;
   width: 100%;
-  animation: showcontent 5s forwards;
+  animation: hideAnimation 0s ease-in 2s;
+  animation-fill-mode: forwards;
   z-index: 1;
 }
-@keyframes showcontent {
-  0% {
-  }
-  99% {
-    opacity: 0;
+
+@keyframes hideAnimation {
+  to {
     visibility: hidden;
-  }
-  100% {
-    opacity: 0;
+    width: 0;
+    height: 0;
   }
 }
 

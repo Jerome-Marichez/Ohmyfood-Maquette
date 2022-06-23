@@ -7,10 +7,18 @@
 ) {
   display: flex;
   flex-direction: $flex-direction;
-  flex-wrap: $flex-wrap;
-  align-content: $align-content;
-  justify-content: $justify-content;
-  align-items: $align-items;
+  @if ($flex-wrap) {
+    flex-wrap: $flex-wrap;
+  }
+  @if ($align-content) {
+    align-content: $align-content;
+  }
+  @if ($justify-content) {
+    justify-content: $justify-content;
+  }
+  @if ($align-items) {
+    align-items: $align-items;
+  }
 }
 
 @mixin margin-left-and-right($value) {

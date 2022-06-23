@@ -32,10 +32,10 @@
   margin-left: 15px;
   height: 70px;
   min-width: 100%;
-  box-shadow: 0px 7px 29px 0px rgba($shadow, $shadow_opacity);
+  box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity);
   &:hover {
     background-color: rgba($primary, 0.25);
-    box-shadow: 0px 7px 29px 0px rgba($shadow, $shadow_opacity * 2);
+    box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity * 2);
   }
 }
 
