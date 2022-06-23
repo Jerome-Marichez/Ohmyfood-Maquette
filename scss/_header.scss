@@ -1,15 +1,15 @@
 /********************** HEADER **********************/
 
 header {
-  @include flex-basic(row,wrap,null,space-between,null);
+  @include flex-basic(row, wrap, null, space-between, null);
   background-color: $bg_color;
-  box-shadow: 0 2px 20px 0 rgba($bg_color_4, $shadow_opacity);
+  box-shadow: 0 2px 20px 0 rgba($bg_color_4, $shadow_opacity * 1.5);
 }
 
 header > .previous,
 header > .logo,
 header > .empty {
-  @include flex-basic(row,wrap,null,null,null);
+  @include flex-basic(row, wrap, null, null, null);
 }
 
 header > .logo {
