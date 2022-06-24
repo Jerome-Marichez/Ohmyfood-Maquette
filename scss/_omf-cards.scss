@@ -1,6 +1,6 @@
-@import "variables.scss"; /** VARIABLES FOR COLOR SCHEME **/
-@import "mixin.scss";
-@import "global.scss"; /** IMPORT FOR GLOBAL CLASS **/
+// @import "variables.scss"; /** VARIABLES FOR COLOR SCHEME **/
+// @import "mixin.scss";
+// @import "global.scss"; /** IMPORT FOR GLOBAL CLASS **/
 
 .omf-cards {
   @include flex-basic(column, null, null, null, null);
