@@ -38,7 +38,9 @@
     box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity * 2);
   }
 }
-
+.group-omf-list span {
+  display: block;
+}
 .group-omf-list > button:nth-child(2):hover > div::before {
   color: $primary;
 }
