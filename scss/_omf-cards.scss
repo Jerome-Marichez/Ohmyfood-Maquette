@@ -78,17 +78,5 @@
   flex: 1;
 }
 .omf-cards .description .coeur {
-  &::before {
-    transition: 1s;
-    margin-right: 25px;
-    font-size: 22px;
-    content: "\f004";
-    color: $bg_color;
-    text-shadow: -1px 0 $font_color, 0 1px $font_color, 1px 0 $font_color,
-      0 -1px $font_color;
-  }
-  &:hover::before {
-    transition: 1s;
-    color: $primary;
-  }
+  @extend %coeur;
 }
