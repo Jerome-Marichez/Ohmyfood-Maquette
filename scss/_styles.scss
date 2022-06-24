@@ -71,6 +71,9 @@
   background-color: $bg_color_2;
   padding-bottom: 60px;
 }
+#page-restaurant > h2 {
+  font-family: $font_title;
+}
 
 %settings_image {
   height: 260px;
@@ -94,5 +97,11 @@
 
 #page-restaurant > .container-menu .title-container {
   @include flex-basic(row,null,null,null,null);
+}
+
+.title-container > .coeur {
+  @include flex-basic(row, null, null, flex-end, center);
+  flex: 1;
+  @extend %coeur;
 }
 //////////////////////////////// END OTHERS PAGES ////////////////////////////////
