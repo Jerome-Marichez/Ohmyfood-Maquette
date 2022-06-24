@@ -1,4 +1,4 @@
-/********************* HOME PAGE *********************************************************/
+ //////////////////////////////// HOME PAGE  ////////////////////////////////
 /********************** SECTION ACCUEIL ********************/
 #accueil {
   @include flex-basic(column, wrap, null, null, center);
@@ -62,11 +62,16 @@
   padding-bottom: 20px;
 }
 /********************** END SECTION RESTAURANTS ******************/
-/********************* END HOME PAGE *********************************************************/
+//////////////////////////////// END HOME PAGE ////////////////////////////////
 
+//////////////////////////////// OTHERS PAGES ////////////////////////////////////
+#page-restaurant {
+  @include flex-basic(column, wrap, null, null, center);
+  padding-bottom: 60px;
+}
 
-
-/********************* MENU PAGE *********************************************************/
-
-
-/********************* END MENU PAGE *********************************************************/
+.image-delice {
+  background-image: url($path_image + 'restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg');
+  min-height: 250px;
+}
+//////////////////////////////// END OTHERS PAGES ////////////////////////////////
