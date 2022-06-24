@@ -1,5 +1,5 @@
 .omf-title-menu,
-.omf-lists-background > div:last-child h4:first-child {
+.omf-lists-content > .bottom-content > h4:first-child {
   font-weight: normal;
 }
 
@@ -34,10 +34,20 @@
   padding: 10px;
 }
 
-.omf-lists-content > div:first-child {
+.omf-lists-content .top-content {
   @include flex-basic(row, null, null, null, null);
 }
 
-.omf-lists-content > div:last-child {
+.omf-lists-content .bottom-content {
   @include flex-basic(row, null, null, space-between, null);
+}
+.omf-lists-content .bottom-content > div {
+  @include flex-basic(row, null, null, null, null);
+}
+
+.omf-lists-content button {
+  margin-right: -10px;
+  margin-top: -35px;
+  margin-bottom: -20px;
+  @include padding-left-and-right(20px);
 }
