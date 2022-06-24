@@ -4,7 +4,7 @@
   @include flex-basic(column, wrap, null, null, center);
   background-color: $bg_color_2;
   padding-bottom: 60px;
-  margin-top: 5px
+  margin-top: 5px;
 }
 
 #accueil > .geolocalisation {
@@ -71,24 +71,59 @@
   background-color: $bg_color_2;
   padding-bottom: 60px;
 }
+#page-restaurant h1 {
+  font-size: 27px;
+  font-family: $font_title;
+}
 
 %settings_image {
-  height: 250px;
+  height: 260px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.image-delice {
-  background-image: url($path_image + "restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+
+.image-palette {
   @extend %settings_image;
+  background-image: url($path_image + "restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.image-enchantee {
+  @extend %settings_image;
+  background-image: url($path_image + "restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+.image-francaise {
+  @extend %settings_image;
+  background-image: url($path_image + "restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+.image-delice {
+  @extend %settings_image;
+  background-image: url($path_image + "restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 #page-restaurant > .container-menu {
-  margin-top: -50px;
+  margin-top: -40px;
   min-height: 250px;
   background-color: $bg_color_2;
   border-radius: 40px 40px 0px 0px;
-  padding: 25px;
+  padding: 20px;
+  padding-top: 35px;
   width: 100%;
+}
+
+#page-restaurant > .container-menu .title-container {
+  @include flex-basic(row, null, null, null, null);
+}
+
+.title-container > .coeur {
+  @include flex-basic(row, null, null, flex-end, center);
+  @extend %coeur;
+  margin-right: -7px;
+  margin-bottom: 7px;
+  &::before {
+    color: $bg_color_2;
+  }
+  flex: 1;
+  cursor: pointer;
+  
 }
 //////////////////////////////// END OTHERS PAGES ////////////////////////////////
