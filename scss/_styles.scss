@@ -71,7 +71,8 @@
   background-color: $bg_color_2;
   padding-bottom: 60px;
 }
-#page-restaurant > h2 {
+#page-restaurant h1 {
+  font-size: 27px;
   font-family: $font_title;
 }
 
@@ -104,7 +105,8 @@
   min-height: 250px;
   background-color: $bg_color_2;
   border-radius: 40px 40px 0px 0px;
-  padding: 25px;
+  padding: 20px;
+  padding-top: 35px;
   width: 100%;
 }
 
@@ -115,11 +117,13 @@
 .title-container > .coeur {
   @include flex-basic(row, null, null, flex-end, center);
   @extend %coeur;
-  
+  margin-right: -7px;
+  margin-bottom: 7px;
   &::before {
     color: $bg_color_2;
   }
   flex: 1;
   cursor: pointer;
+  
 }
 //////////////////////////////// END OTHERS PAGES ////////////////////////////////
