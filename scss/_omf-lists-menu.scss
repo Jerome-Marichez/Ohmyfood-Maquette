@@ -25,7 +25,7 @@
   @include flex-basic(column, null, null, null, null);
 }
 
-.omf-lists-background {
+.omf-lists-content {
   box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity);
   height: 70px;
   background-color: $bg_color;
@@ -34,10 +34,10 @@
   padding: 10px;
 }
 
-.omf-lists-background > div:first-child {
+.omf-lists-content > div:first-child {
   @include flex-basic(row, null, null, null, null);
 }
 
-.omf-lists-background > div:last-child {
+.omf-lists-content > div:last-child {
   @include flex-basic(row, null, null, space-between, null);
 }
