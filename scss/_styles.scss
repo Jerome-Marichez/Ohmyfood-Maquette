@@ -67,16 +67,27 @@
 //////////////////////////////// OTHERS PAGES ////////////////////////////////////
 #page-restaurant {
   @include flex-basic(column, wrap, null, null, center);
+  background-color: $bg_color_2;
   padding-bottom: 60px;
 }
 
 %settings_image {
-  min-height: 250px;
+  height: 250px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .image-delice {
   background-image: url($path_image + "restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   @extend %settings_image;
+}
+
+#page-restaurant > .container-menu {
+  margin-top: -50px;
+  min-height: 250px;
+  background-color: $bg_color_2;
+  border-radius: 40px 40px 0px 0px;
+  padding: 25px;
+  width: 100%;
 }
 //////////////////////////////// END OTHERS PAGES ////////////////////////////////
