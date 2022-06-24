@@ -73,7 +73,7 @@
 }
 
 %settings_image {
-  height: 250px;
+  height: 260px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,11 +84,15 @@
 }
 
 #page-restaurant > .container-menu {
-  margin-top: -50px;
+  margin-top: -40px;
   min-height: 250px;
   background-color: $bg_color_2;
   border-radius: 40px 40px 0px 0px;
   padding: 25px;
   width: 100%;
+}
+
+#page-restaurant > .container-menu .title-container {
+  @include flex-basic(row,null,null,null,null);
 }
 //////////////////////////////// END OTHERS PAGES ////////////////////////////////
