@@ -3,9 +3,12 @@
   font-weight: normal;
 }
 
+.title-container {
+  margin-bottom: 25px;
+}
 .omf-title-menu {
-  margin-top: 25px;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   font-size: 16px;
   text-transform: uppercase;
   &:after {
@@ -18,7 +21,7 @@
     max-width: 250px;
     width: 40px;
     border-bottom: 3px solid $tertiary;
-    padding: 4px 0px;
+    padding: 3px 0px;
   }
 }
 
@@ -26,8 +29,11 @@
   @include flex-basic(column, null, null, null, null);
 }
 
+.omf-lists-content:first-child {
+  margin-top: 10px;
+}
 .omf-lists-content {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity);
   height: 70px;
   background-color: $bg_color;
@@ -45,7 +51,6 @@
 
 .omf-lists-content .bottom-content > h4,
 .omf-lists-content h3 {
-
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
