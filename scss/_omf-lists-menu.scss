@@ -15,7 +15,7 @@
     bottom: 0;
     max-width: 250px;
     height: 1px;
-    width: 50px; /* or 100px */
+    width: 50px;
     border-bottom: 1px solid $tertiary;
     padding: 4px 0px;
   }
@@ -32,6 +32,9 @@
   width: 100%;
   border-radius: 20px 20px;
   padding: 10px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .omf-lists-content .top-content {
@@ -45,9 +48,35 @@
   @include flex-basic(row, null, null, null, null);
 }
 
-.omf-lists-content button {
-  margin-right: -10px;
-  margin-top: -35px;
-  margin-bottom: -20px;
-  @include padding-left-and-right(20px);
+/** ABOUT THE BUTTON **/
+
+.omf-lists-content button i {
+  transition: 0.25s;
+  visibility: hidden;
+  color: $font_color_2;
+  font-size: 20px;
 }
+.omf-lists-content button {
+  transition: 1s;
+  background-color: $tertiary;
+  margin-right: -10px;
+  margin-top: -33px;
+    height: 72px;
+  width: 0px;
+  box-shadow: 4px 5px 10px 1px rgba($shadow_color, $shadow_opacity);
+  border-radius: 0px 20px 20px 0px;
+  margin-right: -10px;
+  border: none;
+}
+
+.omf-lists-content:hover i {
+  transition: 0.5s;
+  transform:rotate(360deg);
+  visibility: visible;
+}
+
+.omf-lists-content:hover button {
+  width: 62px;
+}
+
+/** END ABOUT THE BUTTON **/
