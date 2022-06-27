@@ -4,7 +4,9 @@
 }
 
 .omf-title-menu {
-  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 16px;
   text-transform: uppercase;
   &:after {
     display: block;
@@ -14,9 +16,8 @@
     left: 0;
     bottom: 0;
     max-width: 250px;
-    height: 1px;
-    width: 50px;
-    border-bottom: 1px solid $tertiary;
+    width: 40px;
+    border-bottom: 3px solid $tertiary;
     padding: 4px 0px;
   }
 }
@@ -26,6 +27,7 @@
 }
 
 .omf-lists-content {
+  margin-bottom: 15px;
   box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity);
   height: 70px;
   background-color: $bg_color;
@@ -41,7 +43,16 @@
   @include flex-basic(row, null, null, null, null);
 }
 
+.omf-lists-content .bottom-content > h4,
+.omf-lists-content h3 {
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .omf-lists-content .bottom-content {
+  margin-top: 5px;
   @include flex-basic(row, null, null, space-between, null);
 }
 .omf-lists-content .bottom-content > div {
@@ -57,11 +68,11 @@
   font-size: 20px;
 }
 .omf-lists-content button {
-  transition: 1.0s;
+  transition: 1s;
   background-color: $tertiary;
   margin-right: -10px;
-  margin-top: -33px;
-    height: 72px;
+  margin-top: -38px;
+  height: 71px;
   width: 0px;
   box-shadow: 4px 5px 10px 1px rgba($shadow_color, $shadow_opacity);
   border-radius: 0px 15px 15px 0px;
@@ -71,7 +82,7 @@
 
 .omf-lists-content:hover i {
   transition: 0.5s;
-  transform:rotate(360deg);
+  transform: rotate(360deg);
   visibility: visible;
 }
 
