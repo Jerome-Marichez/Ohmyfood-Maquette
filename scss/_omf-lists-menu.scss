@@ -98,6 +98,8 @@
   font-size: 20px;
 }
 .omf-lists-content button {
+  cursor: pointer;
+  margin-left: 10px;
   transition: 1s;
   background-color: $tertiary;
   margin-right: -10px;
