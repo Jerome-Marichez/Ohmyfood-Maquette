@@ -1,3 +1,7 @@
+// @import "variables.scss"; /** VARIABLES FOR COLOR SCHEME **/
+// @import "mixin.scss";
+// @import "global.scss"; /** IMPORT FOR GLOBAL CLASS **/
+
 .omf-title-menu,
 .omf-lists-content > .bottom-content > h4:first-child {
   font-weight: normal;
@@ -8,7 +12,7 @@
 }
 .omf-title-menu {
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-size: 16px;
   text-transform: uppercase;
   &:after {
@@ -29,10 +33,10 @@
   @include flex-basic(column, null, null, null, null);
 }
 
-.omf-lists-content:first-child {
-  margin-top: 10px;
-}
+
 .omf-lists-content {
+  opacity: 0;
+  margin-top: -10px;
   margin-bottom: 16px;
   box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity);
   height: 70px;
@@ -42,6 +46,27 @@
   padding: 10px;
   &:hover {
     cursor: pointer;
+  }
+}
+
+
+@for $i from 1 through 10 {
+    .omf-lists-content:nth-child(#{$i}) {
+    -webkit-animation-delay: (#{$i * 1.5s});
+    animation-duration: 1.5s;
+    animation-delay: (#{$i * 1.5s});
+    animation-fill-mode: forwards;
+    animation-name: menu_show_load;
+  }
+}
+
+@keyframes menu_show_load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0px;
   }
 }
 
