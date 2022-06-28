@@ -7,6 +7,7 @@
   border: none;
   color: $font_color_2;
   font-family: $font_text;
+  font-size: 16px;
   background: linear-gradient($secondary, $primary);
   box-shadow: 0 2px 20px 0 rgba($shadow_color, $shadow_opacity * 2);
   cursor: pointer;
@@ -18,8 +19,11 @@
   }
 }
 
+.site-button-menu {
+  width: 185px;
+  height: 50px;
+}
 .size-button-home {
-  font-size: 16px;
   width: 220px;
   height: 50px;
 }
