@@ -21,4 +21,7 @@ main {
     @include flex-basic(row, null, null, null, center);
     gap: 23px;
   }
+  // header {
+  //   // justify-content: space-evenly;
+  // }
 }

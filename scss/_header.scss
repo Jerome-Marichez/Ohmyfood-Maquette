@@ -1,17 +1,18 @@
 /********************** HEADER **********************/
 
 header {
-  @include flex-basic(row, wrap, null, space-between, null);
+  @include flex-basic(row, wrap, null, space-around, null);
   background-color: $bg_color;
+  padding-right: 30px;
 }
 
 .header-shadow {
   box-shadow: 0 2px 20px 0 rgba($bg_color_4, $shadow_opacity * 1.6);
 }
 
-header > .previous,
-header > .logo,
-header > .empty {
+header .previous,
+header .logo,
+header .empty {
   @include flex-basic(row, wrap, null, null, null);
 }
 
@@ -22,6 +23,19 @@ header > .logo {
 
 header > .logo > a > img {
   max-width: 160px;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+}
+
+header .previous::before {
+  font-size: 20px;
+  content: "\f060";
+  padding-right: 5px;
+  padding-top: 5px;
+  color: $font_color;
 }
 
 .icone_geolocalisation::before {
