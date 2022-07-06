@@ -71,6 +71,9 @@
 .omf-lists-content .top-content {
   @include flex-basic(row, null, null, null, null);
 }
+.top-content > div {
+  transition: 0.5s;
+}
 
 .omf-lists-content h4,
 .omf-lists-content h3 {
@@ -93,12 +96,9 @@
   @include flex-basic(row, null, null, null, null);
 }
 
-
-.omf-lists-content .top-content > div { 
+.omf-lists-content .top-content > div {
   min-width: 0px;
 }
-
-
 
 /** ABOUT THE BUTTON **/
 
