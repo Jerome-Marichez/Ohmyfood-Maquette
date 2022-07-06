@@ -74,7 +74,7 @@
   @include flex-basic(row, null, null, null, null);
 }
 
-.omf-lists-content .bottom-content > h4,
+.omf-lists-content h4,
 .omf-lists-content h3 {
   white-space: nowrap;
   overflow: hidden;
