@@ -124,9 +124,7 @@
   @extend %coeur;
   margin-right: -7px;
   margin-bottom: 7px;
-  &::before {
-    color: $bg_color_2;
-  }
+
   flex: 1;
   cursor: pointer;
 }
