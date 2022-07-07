@@ -78,6 +78,3 @@
   @include flex-basic(row, null, null, flex-end, center);
   flex: 1;
 }
-.omf-cards .description .coeur {
-  @extend %coeur;
-}

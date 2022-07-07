@@ -121,10 +121,8 @@
 
 .title-container > .coeur {
   @include flex-basic(row, null, null, flex-end, center);
-  @extend %coeur;
   margin-right: -7px;
   margin-bottom: 7px;
-
   flex: 1;
   cursor: pointer;
 }

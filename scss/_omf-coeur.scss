@@ -1,11 +1,7 @@
 // @import "variables.scss"; /** IMPORT VARIABLES **/
 // @import "global.scss"; /** IMPORT GLOBAL CSS FOR FONTS HTML,* SELECTOR **/
 
-%coeur {
-  transition: 1s;
-  max-width: 24px;
-  &:hover {
-    transition: 1s;
-    background-color: $primary;
-  }
+.coeur {
+  max-width: 34px;
+  cursor: pointer;
 }
