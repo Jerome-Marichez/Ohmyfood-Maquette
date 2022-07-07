@@ -1,17 +1,48 @@
 // @import "variables.scss"; /** IMPORT VARIABLES **/
 // @import "global.scss"; /** IMPORT GLOBAL CSS FOR FONTS HTML,* SELECTOR **/
 
-.coeur {
-  width: 32px;
-  height: 32px;
-  background: linear-gradient($secondary, $primary);
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="10 10 24 24"><path  d="M20,31 C15.4189994,27.2225585 12.5023327,24.2225585 11.25,22 C10.2743515,20.6156479 10,19.6181623 10,18.1428571 C10,15.5113854 12.4883456,13 15,13 C17.3176009,13 18.9621484,13.8491346 20,15.5714286 C21.0382977,13.8491346 22.6828452,13 25,13 C27.5116544,13 30,15.5113854 30,18.1428571 C30,19.6181623 29.7256485,20.6156479 28.75,22 C27.497816,24.2225585 24.5811493,27.2225585 20,31 Z" /></svg>')
-    no-repeat;
-  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="10 10 24 24"><path d="M20,31 C15.4189994,27.2225585 12.5023327,24.2225585 11.25,22 C10.2743515,20.6156479 10,19.6181623 10,18.1428571 C10,15.5113854 12.4883456,13 15,13 C17.3176009,13 18.9621484,13.8491346 20,15.5714286 C21.0382977,13.8491346 22.6828452,13 25,13 C27.5116544,13 30,15.5113854 30,18.1428571 C30,19.6181623 29.7256485,20.6156479 28.75,22 C27.497816,24.2225585 24.5811493,27.2225585 20,31 Z" /></svg>')
-    no-repeat;
 
-  &:hover {
-  background: linear-gradient($secondary, $primary);
-  }
+.coeur {
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="10 10 24 24"><path d="M20,31 C15.4189994,27.2225585 12.5023327,24.2225585 11.25,22 C10.2743515,20.6156479 10,19.6181623 10,18.1428571 C10,15.5113854 12.4883456,13 15,13 C17.3176009,13 18.9621484,13.8491346 20,15.5714286 C21.0382977,13.8491346 22.6828452,13 25,13 C27.5116544,13 30,15.5113854 30,18.1428571 C30,19.6181623 29.7256485,20.6156479 28.75,22 C27.497816,24.2225585 24.5811493,27.2225585 20,31 Z" /></svg>');
+  background-repeat: no-repeat;
 }
 
+.coeur:hover .blackcoeur {
+  opacity: 0;
+}
+
+.coeur:hover .coloredcoeur {
+  opacity: 1.0;
+}
+
+.coeur,
+.blackcoeur,
+.coloredcoeur {
+  width: 34px;
+  height: 34px;
+}
+
+.blackcoeur,
+.coloredcoeur {
+  cursor: pointer;
+  transition: 1s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  @include mask-crossbrowser(url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"  viewBox="10 10 24 24"><path d="M20,31 C15.4189994,27.2225585 12.5023327,24.2225585 11.25,22 C10.2743515,20.6156479 10,19.6181623 10,18.1428571 C10,15.5113854 12.4883456,13 15,13 C17.3176009,13 18.9621484,13.8491346 20,15.5714286 C21.0382977,13.8491346 22.6828452,13 25,13 C27.5116544,13 30,15.5113854 30,18.1428571 C30,19.6181623 29.7256485,20.6156479 28.75,22 C27.497816,24.2225585 24.5811493,27.2225585 20,31 Z" /></svg>') no-repeat);
+}
+
+.blackcoeur {
+  margin-left: 1px;
+  -webkit-mask-size: 32px;
+  margin-top: 1px;
+  background: white;
+  opacity: 1;
+}
+
+.coloredcoeur {
+  opacity: 0;
+
+  background: linear-gradient($primary, $secondary);
+}
