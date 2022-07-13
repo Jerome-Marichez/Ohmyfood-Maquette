@@ -29,6 +29,10 @@
   }
 }
 
+.omf-title-menu:nth-child(4) {
+    margin-top: 17px;
+}
+
 .omf-lists-menu {
   @include flex-basic(column, null, null, null, null);
 }
@@ -80,6 +84,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.omf-lists-content h4 {
+  font-size: 15px;
+}
+
+.omf-lists-content h3 {
+  font-size: 18px;
 }
 
 .omf-lists-content .bottom-content,
