@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 
-@import "variables.scss"; /** IMPORT VARIABLES **/
-@import "mixin.scss"; /** IMPORT GLOBAL MIXIN **/
-@import "global.scss"; /** IMPORT GLOBAL CSS FOR FONTS HTML,* SELECTOR **/
-@import "loading-spinner.scss"; /** IMPORT LOADING SPINNER **/
-@import "omf-coeur.scss"; /** IMPORT COEUR ICON **/
-@import "omf-button.scss"; /** IMPORT BUTTON CSS **/
-@import "omf-list.scss"; /** IMPORT LIST BUTTON CSS **/
-@import "omf-cards.scss"; /** IMPORT CARDS SCSS **/
-@import "omf-lists-menu.scss"; /** IMPORT LIST MENU SCSS **/ 
-@import "header.scss"; /** IMPORT HEADER STYLES **/
-@import "styles.scss"; /** IMPORT OTHER STYLES **/
-@import "footer.scss"; /** IMPORT FOOTER STYLES **/
-@import "responsive.scss"; /** IMPORT RULES FOR RESPONSIVE (SCREEN bigger then mobile) **/
+@import "Utils/variables.scss"; /** IMPORT VARIABLES **/
+@import "Utils/mixin"; /** IMPORT GLOBAL MIXIN **/
+@import "base/global"; /** IMPORT GLOBAL CSS FOR FONTS HTML,* SELECTOR **/
+@import "Composants/loading-spinner.scss"; /** IMPORT LOADING SPINNER **/
+@import "Composants/omf-coeur.scss"; /** IMPORT COEUR ICON **/
+@import "Composants/omf-button.scss"; /** IMPORT BUTTON CSS **/
+@import "Composants/omf-list.scss"; /** IMPORT LIST BUTTON CSS **/
+@import "Composants/omf-cards.scss"; /** IMPORT CARDS SCSS **/
+@import "Composants/omf-lists-menu.scss"; /** IMPORT LIST MENU SCSS **/ 
+@import "Layout/header.scss"; /** IMPORT HEADER STYLES **/
+@import "Layout/styles.scss"; /** IMPORT OTHER STYLES **/
+@import "Layout/footer.scss"; /** IMPORT FOOTER STYLES **/
+@import "Layout/responsive.scss"; /** IMPORT RULES FOR RESPONSIVE (SCREEN bigger then mobile) **/
