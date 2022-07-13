@@ -123,17 +123,17 @@
 }
 
 #page-restaurant>.container-menu .title-container {
-  @include flex-basic(row,null,null,space-between,center);
+  @include flex-basic(row, null, null, space-between, center);
 }
 
 .container-button {
   @include flex-basic(row, null, null, center, null);
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .title-container>.coeur {
-  @include flex-basic(column,nowrap,flex-start,center,flex-end);
-  cursor: pointer;
+  @include flex-basic(column, nowrap, flex-start, center, flex-end);
+  margin-right: 17px;
 }
 
 //////////////////////////////// END OTHERS PAGES ////////////////////////////////
