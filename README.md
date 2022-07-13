@@ -34,7 +34,6 @@ L'objectif est de développer un site 100% mobile qui répertorie les menus de r
 
 - Pas de framework
 - Utilisation de SASS conseillée
-- Validateur HTML et CSS sans erreur/alerte
 - Le site devra être compatible avec les dernières versions de Chrome et Firefox
   
 
