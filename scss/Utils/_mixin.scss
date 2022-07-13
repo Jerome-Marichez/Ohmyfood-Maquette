@@ -25,7 +25,7 @@
 
 @mixin mask-crossbrowser($value) {
   -webkit-mask: $value;
-    mask: $value;
+  mask: $value;
 }
 
 @mixin margin-left-and-right($value) {

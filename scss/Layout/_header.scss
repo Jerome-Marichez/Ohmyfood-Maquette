@@ -16,12 +16,12 @@ header .empty {
   @include flex-basic(row, wrap, null, null, null);
 }
 
-header > .logo {
+header>.logo {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-header > .logo > a > img {
+header>.logo>a>img {
   max-width: 160px;
 }
 

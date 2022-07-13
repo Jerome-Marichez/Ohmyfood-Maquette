@@ -3,18 +3,20 @@
 // @import "global.scss"; /** IMPORT FOR GLOBAL CLASS **/
 
 .omf-title-menu,
-.omf-lists-content > .bottom-content > h4:first-child {
+.omf-lists-content>.bottom-content>h4:first-child {
   font-weight: normal;
 }
 
 .title-container {
   margin-bottom: 25px;
 }
+
 .omf-title-menu {
   margin-top: 10px;
   margin-bottom: 15px;
   font-size: 16px;
   text-transform: uppercase;
+
   &:after {
     display: block;
     clear: both;
@@ -30,7 +32,7 @@
 }
 
 .omf-title-menu:nth-child(4) {
-    margin-top: 17px;
+  margin-top: 17px;
 }
 
 .omf-lists-menu {
@@ -47,6 +49,7 @@
   width: 100%;
   border-radius: 15px 15px;
   padding: 10px;
+
   &:hover {
     cursor: pointer;
   }
@@ -66,6 +69,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
     margin-top: 0px;
@@ -75,7 +79,8 @@
 .omf-lists-content .top-content {
   @include flex-basic(row, null, null, null, null);
 }
-.top-content > div {
+
+.top-content>div {
   transition: 0.5s;
 }
 
@@ -103,12 +108,12 @@
   margin-top: 5px;
 }
 
-.omf-lists-content .bottom-content > div,
-.omf-lists-content .top-content > div {
+.omf-lists-content .bottom-content>div,
+.omf-lists-content .top-content>div {
   @include flex-basic(row, null, null, null, null);
 }
 
-.omf-lists-content .top-content > div {
+.omf-lists-content .top-content>div {
   min-width: 0px;
 }
 
@@ -120,6 +125,7 @@
   color: $font_color_2;
   font-size: 20px;
 }
+
 .omf-lists-content button {
   cursor: pointer;
   margin-left: 10px;
@@ -141,9 +147,10 @@
   visibility: visible;
 }
 
-.omf-lists-content:hover .top-content > div {
+.omf-lists-content:hover .top-content>div {
   min-width: 62px;
 }
+
 .omf-lists-content:hover button {
   width: 62px;
 }

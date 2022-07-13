@@ -6,25 +6,27 @@ footer {
   padding-bottom: 40px;
 }
 
-footer > .logo-footer {
+footer>.logo-footer {
   @include flex-basic(column, null, null, null, null);
   width: 100px;
   padding-bottom: 22px;
 }
-footer > .logo-footer > img {
+
+footer>.logo-footer>img {
   filter: invert(1);
 }
 
-footer > ul {
+footer>ul {
   @include flex-basic(column, null, null, null, null);
   list-style: none;
   gap: 7px;
 }
-footer > ul > li {
+
+footer>ul>li {
   color: $font_color_2;
 }
 
-footer > ul > li i {
+footer>ul>li i {
   font-size: 13px;
   min-width: 20px;
   text-align: center;

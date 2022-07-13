@@ -8,7 +8,7 @@
   margin-right: 15px;
 }
 
-.group-omf-list > button:nth-child(1) {
+.group-omf-list>button:nth-child(1) {
   position: absolute;
   border: none;
   border-radius: 30px 30px;
@@ -18,7 +18,7 @@
   width: 25px;
 }
 
-.group-omf-list > button:nth-child(2) {
+.group-omf-list>button:nth-child(2) {
   color: $font_color;
   font-size: 16px;
   font-weight: bold;
@@ -33,15 +33,18 @@
   height: 70px;
   min-width: 100%;
   box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity);
+
   &:hover {
     background-color: rgba($primary, 0.25);
     box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity * 2);
   }
 }
+
 .group-omf-list span {
   display: block;
 }
-.group-omf-list > button:nth-child(2):hover > div::before {
+
+.group-omf-list>button:nth-child(2):hover>div::before {
   color: $primary;
 }
 
@@ -52,17 +55,17 @@
   color: rgba($bg_color_4, 0.6);
 }
 
-.group-omf-list > button .icone_smartphone::before {
+.group-omf-list>button .icone_smartphone::before {
   @extend %icone_settings;
   content: "\f3cf";
 }
 
-.group-omf-list > button .icone_list::before {
+.group-omf-list>button .icone_list::before {
   @extend %icone_settings;
   content: "\f03a";
 }
 
-.group-omf-list > button .icone_shop::before {
+.group-omf-list>button .icone_shop::before {
   @extend %icone_settings;
   content: "\f54e";
 }
