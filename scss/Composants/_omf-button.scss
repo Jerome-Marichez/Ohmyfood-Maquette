@@ -12,6 +12,7 @@
   box-shadow: 0 2px 20px 0 rgba($shadow_color, $shadow_opacity * 2);
   cursor: pointer;
   border-radius: 30px 30px;
+
   &:hover {
     transition: 0.5s;
     box-shadow: 0 2px 20px 0 rgba($shadow_color, $shadow_opacity * 4);
@@ -23,6 +24,7 @@
   width: 185px;
   height: 50px;
 }
+
 .size-button-home {
   width: 220px;
   height: 50px;

@@ -2,6 +2,7 @@
 main {
   transition: all 0.5s ease-in-out 0.5s;
 }
+
 @media screen and (min-width: 900px) {
   main {
     @include margin-left-and-right(20%);
@@ -12,15 +13,16 @@ main {
     @include flex-basic(row, null, null, space-between, null);
   }
 
-  footer > .logo-footer {
+  footer>.logo-footer {
     flex-direction: row;
     padding-bottom: 0px;
   }
 
-  footer > ul {
+  footer>ul {
     @include flex-basic(row, null, null, null, center);
     gap: 23px;
   }
+
   // header {
   //   // justify-content: space-evenly;
   // }
