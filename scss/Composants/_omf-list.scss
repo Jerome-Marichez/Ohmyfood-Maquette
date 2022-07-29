@@ -38,6 +38,12 @@
     background-color: rgba($primary, 0.25);
     box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity * 2);
   }
+
+  &:hover .icone_smartphone::before,
+  &:hover .icone_list::before,
+  &:hover .icone_shop::before {
+    color: $primary;
+  }
 }
 
 .group-omf-list span {
