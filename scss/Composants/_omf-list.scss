@@ -39,9 +39,7 @@
     box-shadow: $box_shadow rgba($shadow_color, $shadow_opacity * 2);
   }
 
-  &:hover .icone_smartphone::before,
-  &:hover .icone_list::before,
-  &:hover .icone_shop::before {
+  &:hover .fontawesome::before {
     color: $primary;
   }
 }
