@@ -36,9 +36,6 @@ L'objectif est de développer un site 100% mobile qui répertorie les menus de r
 - Utilisation de SASS conseillée
 - Le site devra être compatible avec les dernières versions de Chrome et Firefox
   
-
-## Outils et technos utilisés
-
 ### Outils
 
 - Github
@@ -48,6 +45,6 @@ L'objectif est de développer un site 100% mobile qui répertorie les menus de r
 - SASS
 - Validateur W3C pour [HTML](https://validator.w3.org/) et [CSS](https://jigsaw.w3.org/css-validator/#validate_by_upload)
 
-### Technos
+### Langages
 
-HTML, CSS, (SASS)
+HTML, CSS, SCSS (SASS)
